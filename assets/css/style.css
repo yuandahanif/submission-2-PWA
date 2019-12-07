@@ -1,0 +1,115 @@
+p{
+  margin: 0;  
+}
+h1,h2,h3,h4,h5{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*$ setting */
+nav,.footer-copyright,.page-footer{
+    background-color:  #2196f3 !important;
+}
+.waves-effect.waves-cyan .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+     background-color: #2196f3;
+}
+/* * on small device */
+@media only screen and (max-width : 600px){
+    .team-wraper-top{
+        display: block !important;
+    }
+}
+/*$ footer fix bawah */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+/*$ main */
+main{
+    padding: 0em 0;
+}
+/* $ home */
+img.cres{
+    height: 1.5em;
+    margin-right: .5em;
+}
+/* $ team */
+.team-logo{
+    max-height: 40vh;
+}
+.team-name {
+    /* margin-left: 2em !important; */
+    min-height: 100% !important;
+}
+/* $ match */
+#match .card{
+    height: 200px;
+}
+
+
+
+/* ! meng-extends framework */
+/* flex */
+.d-flex{
+    display: flex;
+}
+.f-width-100 > *{
+    width: 100%;
+    scale: 1;
+}
+.f-wrap{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+.justify-center > *{ /* disable margin yang ada di .col*/
+    margin-left: 0 !important;
+}
+.align-item-center{
+    display: flex;
+    align-items: center;
+}
+.f-column{
+    flex-direction: column !important;
+}
+/* padding */
+.p-0{
+    padding: 0 !important;
+}
+.p-2{
+    padding: 2em;
+}
+.pt-1{
+    padding-top: 1em;
+}
+.pt-2{
+    padding-top: 2em;
+}
+.pt-3{
+    padding-top: 3em;
+}
+/* margin */
+.mb-0{
+    margin-bottom: 0;
+}
+.mb-1{
+    margin-bottom: 1em;
+}
+
+/* button */
+.btn-back{
+    background-color: cadetblue;
+}
