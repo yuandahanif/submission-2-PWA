@@ -82,6 +82,9 @@ img.cres{
     display: flex;
     align-items: center;
 }
+.space-betwen{
+    justify-content: space-between;
+}
 .f-column{
     flex-direction: column !important;
 }

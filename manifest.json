@@ -7,6 +7,7 @@
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/index.html",
+  "gcm_sender_id" : "680183130582",
   "icons": [
     {
       "src": "./assets/images/icons/icon-72x72.png",

@@ -261,9 +261,11 @@ function disolayFavTeam() {
         for (const f of favs) {
             data += `
                     <li class="collection-item left-align" id="unfav-id-${f.id}">
+                    <div class="d-flex space-betwen align-item-center">
                         <a href="#team?id=${f.id}" class="left-align link-team">${f.name}</a>
-                        <a href="#unfav-me" class="secondary-content unfav" data-id="${f.id}">unfavorite</a>
-                    </li>
+                        <a href="#unfav-me" class="waves-effect waves-light btn red unfav" data-id="${f.id}">unfavorite</a>
+                    </div>
+                        </li>
                             `
         }
     })

@@ -5,7 +5,7 @@ const config = {
     get endPoint() {
         return {
             base_url: this.base_url,
-            klasemen: `${this.base_url}//competitions/${this.liga_id}/standings/`,
+            klasemen: `${this.base_url}/competitions/${this.liga_id}/standings/`,
             tim: `${this.base_url}/teams/`,
             upComing: `${this.base_url}/competitions/${this.liga_id}/matches?status=SCHEDULED`,
             matchDetail: `${this.base_url}/matches`,
@@ -22,14 +22,11 @@ function fetchData(url) {
     return fetch(url, {
         method: "GET",
         headers: {
-            // 'Access-Control-Allow-Origin' : "*",
-            // 'Access-Control-Allow-Headers' : "x-auth-token, x-response-control",
-            // 'Access-Control-Allow-Methods' : "GET",
             'X-Auth-Token': token
         }
     })
 }
-//FIXME: ! belom ada fungsi cache
+
 async function getKlasemen() {
     try {
         if ('caches' in window) {

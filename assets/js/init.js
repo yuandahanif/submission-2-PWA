@@ -29,6 +29,10 @@ if ('PushManager' in window) {
         regis.pushManager.subscribe({
             userVisibleOnly : true,
             applicationServerKey : urlBase64ToUint8Array("BOXHvLqtqkbrE_vi6IcirRv9U3z5rhLNUG15CTuCMZElFZLKjPU4hXyG77qZNWe9zQzVBRZv_snB0vqWAxZovFY")
+        }).then(subscribe=>{
+            console.log('berhasil melakukan subscribe dengan endpoin : ',subscribe.endpoint);
+            console.log('berhasil melakukan subscribe dengan p265dh key : ',btoa(String.fromCharCode.apply(null,new Uint8Array(subscribe.getKey('p256dh')))));
+            console.log('berhasil melakukan subscribe dengan auth key : ',btoa(String.fromCharCode.apply(null,new Uint8Array(subscribe.getKey('auth')))));
         }).catch( err => {
             console.log('subscribetion error : ' +err.message)
         })
