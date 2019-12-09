@@ -17,6 +17,22 @@ nav,.footer-copyright,.page-footer{
     of the button to still show through. */
      background-color: #2196f3;
 }
+/* preload */
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);	
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+.fade-out{
+    display: none !important;
+}
 /* * on small device */
 @media only screen and (max-width : 600px){
     .team-wraper-top{

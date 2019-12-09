@@ -1,12 +1,16 @@
 window.addEventListener('DOMContentLoaded', function () {
     const sNav = document.querySelector('.sidenav')
     const dropdown = document.querySelectorAll('.dropdown-trigger')
+    const preload = document.querySelector('.preloader-background')
+    const mainDisplay = document.querySelector('#main-display')
     M.Sidenav.init(sNav)
     M.Dropdown.init(dropdown, {
         over: true,
         belowOrigin: true,
         alignment: 'right'
     })
+    // preloaded
+    preload.classList.add('fade-out')
 
 })
 // init the collapsable

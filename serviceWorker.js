@@ -1,5 +1,6 @@
 const CACHE_NAME = 'submission-2 v0.2'
 const urlToCache = [
+    '/',
     './index.html',
     './manifest.json',
     './serviceWorker.js',

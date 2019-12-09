@@ -36,6 +36,8 @@ if ('PushManager' in window) {
         }).catch( err => {
             console.log('subscribetion error : ' +err.message)
         })
+    }).catch(e => {
+        console.log('push manager error : '+ e);
     })
 }
 

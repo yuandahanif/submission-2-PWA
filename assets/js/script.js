@@ -193,6 +193,7 @@ async function displayTeam(id) {
                         M.toast({html: data.name+' removed from favorites'})
                         deleteTeamFav(id);
                         teamFavButton.style.backgroundColor = '#26a69a'
+                        teamFavButton.innerHTML = 'favorite'
                     }
                 } else {
                     teamFavButton.style.backgroundColor = '#26a69a'
@@ -201,6 +202,7 @@ async function displayTeam(id) {
                         M.toast({html: data.name + ' added to favorite'})
                         addTeamFav(dataFav);
                         teamFavButton.style.backgroundColor = 'cadetblue'
+                        teamFavButton.innerHTML = 'unfavorite'
                     }
                 }
             })
